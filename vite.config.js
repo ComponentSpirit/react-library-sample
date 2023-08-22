@@ -3,6 +3,7 @@ import autoprefixer from 'autoprefixer';
 import path from 'path';
 import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
+import reactRefresh from '@vitejs/plugin-react-refresh';
 
 export default defineConfig({
   plugins: [
@@ -11,12 +12,20 @@ export default defineConfig({
       insertTypesEntry: true,
       outDir: 'dist/types',
     }),
+    //reactRefresh(),
   ],
   css: {
     postcss: {
       plugins: [
         autoprefixer({}), // add options if needed
       ],
+    },
+  },
+  clearScreen: false,
+  server: {
+    hmr: {
+      host: 'localhost',
+      protocol: 'ws',
     },
   },
   build: {
