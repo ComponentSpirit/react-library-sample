@@ -10,7 +10,7 @@
     "@ComponentSpirit:registry": "https://npm.pkg.github.com"
   },
   "author": "ComponentSpirit",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "private": false,
   "type": "module",
   "main": "./dist/cjs/index.js",
