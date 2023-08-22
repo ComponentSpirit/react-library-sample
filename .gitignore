@@ -1,12 +1,19 @@
 ### JetBrains
-
 .idea/
 
 ### react
 .DS_*
 *.log
 logs
+dist/
 
+# Yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
 yarn-error.log
 node_modules
-dist/
