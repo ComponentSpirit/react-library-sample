@@ -1,11 +1,11 @@
-import React from 'react';
 import styles from './helloWorld.module.scss';
+import { type FC } from 'react';
 
 export interface HelloWorldProps {
   name: string;
 }
 
-export const HelloWorld: React.FC<HelloWorldProps> = ({ name }) => (
+export const HelloWorld: FC<HelloWorldProps> = ({ name }) => (
   <div className={styles.helloWorld}>
     <p>Hello, {name}</p>
   </div>

@@ -6,27 +6,27 @@ import json from '@rollup/plugin-json';
 import pkg from './package.json';
 
 export default {
-    input: 'src/index.ts',
-    output: [
-        {
-            file: './dist/cjs/index.js',
-            format: 'cjs',
-        },
-        {
-            file: './dist/esm/index.js',
-            format: 'es',
-        },
-    ],
-    external: [...Object.keys(pkg.peerDependencies || {})],
-    plugins: [
-        nodeResolve(),
-        commonjs(),
-        json(),
-        typescript({
-            typescript: require('typescript'),
-        }),
-        postCSS({
-            plugins: [require('autoprefixer')],
-        }),
-    ],
+  input: 'src/index.ts',
+  output: [
+    {
+      file: './dist/cjs/index.js',
+      format: 'cjs',
+    },
+    {
+      file: './dist/esm/index.js',
+      format: 'es',
+    },
+  ],
+  external: [...Object.keys(pkg.peerDependencies || {})],
+  plugins: [
+    nodeResolve(),
+    commonjs(),
+    json(),
+    typescript({
+      typescript: require('typescript'),
+    }),
+    postCSS({
+      plugins: [require('autoprefixer')],
+    }),
+  ],
 };
