@@ -1,0 +1,10 @@
+{
+  "name": "@fabant/react-library-sample",
+  "version": "1.0.0",
+  "description": "Sample of a generic react library",
+  "main": "index.js",
+  "repository": "https://github.com/TODO",
+  "author": "FA",
+  "license": "MIT",
+  "private": true
+}

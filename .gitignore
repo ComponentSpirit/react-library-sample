@@ -1,0 +1,11 @@
+### JetBrains
+
+.idea/
+
+### react
+.DS_*
+*.log
+logs
+
+yarn-error.log
+node_modules
