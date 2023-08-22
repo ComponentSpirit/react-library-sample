@@ -27,6 +27,6 @@ jobs:
       - name: 'Compile library'
         run: yarn run build
       - name: 'Publish the package to GitHub Packages'
-        run: yarn npm publish --access public
+        run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
