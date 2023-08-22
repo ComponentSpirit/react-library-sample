@@ -6,6 +6,9 @@
     "type": "git",
     "url": "https://github.com/ComponentSpirit/react-library-sample.git"
   },
+  "publishConfig": {
+    "@ComponentSpirit:registry": "https://npm.pkg.github.com"
+  },
   "author": "ComponentSpirit",
   "license": "UNLICENSED",
   "private": true,
