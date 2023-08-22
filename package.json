@@ -2,7 +2,10 @@
   "name": "@ComponentSpirit/react-library-sample",
   "version": "1.0.0",
   "description": "Sample of a generic react library",
-  "repository": "https://github.com/ComponentSpirit/react-library-sample",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ComponentSpirit/react-library-sample.git"
+  },
   "author": "ComponentSpirit",
   "license": "UNLICENSED",
   "private": true,

@@ -1,4 +1,4 @@
-name: Build and Publish storybook to GitHub Pages
+name: Build and Publish NPM Package to Github Packages
 
 on:
   push:
@@ -7,6 +7,9 @@ on:
     branches:
       - "main"
 
+permissions:
+  contents: read
+  packages: write
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -24,6 +27,6 @@ jobs:
       - name: 'Compile library'
         run: yarn run build
       - name: 'Publish the package to GitHub Packages'
-        run: npm publish
+        run: yarn npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
