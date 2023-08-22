@@ -3,9 +3,12 @@
 This React library is a good example of what you can expect as a deliverable from ComponentSpirit services.
 
 It includes :
-- a Javascript and Typescript-compatible library for React 17+
-- a fully-functional [Storybook](https://componentspirit.github.io/react-library-sample/) to play with the library components and explain how they works
-- a private NPM package that you can directly integrates in your own source code (see [Github Packages document](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry))
+- a Javascript and Typescript-compatible library for React 17+ including quality
+  tools (ESLint, Prettier, Stylelint, etc.)
+- a fully-functional [Storybook](https://componentspirit.github.io/react-library-sample/) to play
+  with the library components and explain how they works
+- a private NPM package that you can directly integrate in your own source code
+  (see [Github Packages document](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry))
 
 ## Installation
 
