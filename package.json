@@ -20,7 +20,10 @@
     "lint": "npx eslint src",
     "lint:fix": "yarn run lint --fix",
     "prettier": "npx prettier src *.js --check",
-    "prettier:fix": "yarn run prettier --write"
+    "prettier:fix": "yarn run prettier --write",
+    "stylelint": "npx stylelint \"./src/**/*.scss\"",
+    "stylelint:fix": "yarn run prettier --write",
+    "format": "yarn run prettier:fix && yarn run lint:fix && yarn run stylelint:fix"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -48,6 +51,8 @@
     "rollup": "^3.28.1",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-typescript2": "^0.35.0",
+    "stylelint": "^15.10.3",
+    "stylelint-config-standard": "^34.0.0",
     "typescript": "*"
   }
 }
