@@ -8,8 +8,7 @@ on:
       - "main"
 
 jobs:
-  build:
-    name: Build
+  publish:
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout'
@@ -25,7 +24,6 @@ jobs:
       - name: 'Compile library'
         run: yarn run build
       - name: 'Publish the package to GitHub Packages'
-        if: steps.check.outputs.changed == 'true'
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
