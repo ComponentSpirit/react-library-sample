@@ -19,10 +19,6 @@ const config: StorybookConfig = {
     disableTelemetry: true,
   },
   viteFinal: async (config) => {
-    config.build = {
-      ...config.build,
-      outDir: 'dist',
-    };
     config.server = {
       ...config.server,
       port: 3000,

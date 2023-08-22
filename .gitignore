@@ -6,6 +6,7 @@
 *.log
 logs
 dist/
+storybook-static/
 
 # Yarn
 .pnp.*
