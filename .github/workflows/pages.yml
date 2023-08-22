@@ -17,6 +17,9 @@ jobs:
       - name: 'Build'
         shell: bash
         run: |
+          echo "::group::Setup"
+          yarn install --immutable
+          echo "::endgroup::"
           echo "::group::Build"
           yarn run build:storybook
           echo "::endgroup::"
