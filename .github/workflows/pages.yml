@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - "main"
+
 permissions:
   contents: read
   pages: write
@@ -17,15 +18,14 @@ jobs:
     steps:
       - name: 'Checkout'
         uses: actions/checkout@v3
-      - name: 'Build'
-        shell: bash
-        run: |
-          echo "::group::Setup"
-          yarn install --immutable
-          echo "::endgroup::"
-          echo "::group::Build"
-          yarn run build:storybook
-          echo "::endgroup::"
+      - name: 'Set up Node.js'
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+      - name: 'Install dependencies'
+        run: yarn install --immutable
+      - name: 'Compile'
+        run: yarn run build:storybook
       - name: 'Upload'
         uses: actions/upload-pages-artifact@v1.0.4
         with:

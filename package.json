@@ -1,10 +1,10 @@
 {
-  "name": "@fabant/react-library-sample",
+  "name": "@ComponentSpirit/react-library-sample",
   "version": "1.0.0",
   "description": "Sample of a generic react library",
-  "repository": "https://github.com/TODO",
-  "author": "CompHeaven",
-  "license": "MIT",
+  "repository": "https://github.com/ComponentSpirit/react-library-sample",
+  "author": "ComponentSpirit",
+  "license": "UNLICENSED",
   "private": true,
   "type": "module",
   "main": "./dist/cjs/index.js",
@@ -27,8 +27,8 @@
     "storybook": "storybook dev -p 6006",
     "build:storybook": "storybook build",
     "build-storybook": "storybook build",
-    "predeploy" : "yarn run build:storybook",
-    "deploy" : "gh-pages -d storybook-static"
+    "predeploy": "yarn run build:storybook",
+    "deploy": "gh-pages -d storybook-static"
   },
   "dependencies": {
     "react": "^17.0.2",
